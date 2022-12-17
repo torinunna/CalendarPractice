@@ -13,6 +13,7 @@
 		863B047A294E1065006EE2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863B0478294E1065006EE2A6 /* Main.storyboard */; };
 		863B047C294E1065006EE2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863B047B294E1065006EE2A6 /* Assets.xcassets */; };
 		863B047F294E1066006EE2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863B047D294E1066006EE2A6 /* LaunchScreen.storyboard */; };
+		863B0487294E18CD006EE2A6 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0486294E18CD006EE2A6 /* CalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		863B047B294E1065006EE2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		863B047E294E1066006EE2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		863B0480294E1066006EE2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863B0486294E18CD006EE2A6 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				863B0474294E1065006EE2A6 /* SceneDelegate.swift */,
 				863B0476294E1065006EE2A6 /* ViewController.swift */,
 				863B0478294E1065006EE2A6 /* Main.storyboard */,
+				863B0486294E18CD006EE2A6 /* CalendarCell.swift */,
 				863B047B294E1065006EE2A6 /* Assets.xcassets */,
 				863B047D294E1066006EE2A6 /* LaunchScreen.storyboard */,
 				863B0480294E1066006EE2A6 /* Info.plist */,
@@ -141,6 +144,7 @@
 				863B0477294E1065006EE2A6 /* ViewController.swift in Sources */,
 				863B0473294E1065006EE2A6 /* AppDelegate.swift in Sources */,
 				863B0475294E1065006EE2A6 /* SceneDelegate.swift in Sources */,
+				863B0487294E18CD006EE2A6 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
