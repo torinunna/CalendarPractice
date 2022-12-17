@@ -91,7 +91,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3g5-6X-UzX" customClass="CalendarCell" customModule="CalendarPractice" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCell" id="3g5-6X-UzX" customClass="CalendarCell" customModule="CalendarPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qrc-cI-DBb">
@@ -148,7 +148,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionVieww" destination="usW-AO-IN5" id="kyP-av-Z4a"/>
+                        <outlet property="collectionView" destination="usW-AO-IN5" id="kyP-av-Z4a"/>
                         <outlet property="monthLabel" destination="4BB-dS-3kK" id="kcS-2i-NTv"/>
                     </connections>
                 </viewController>
