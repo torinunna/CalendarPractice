@@ -15,6 +15,7 @@
 		863B047F294E1066006EE2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863B047D294E1066006EE2A6 /* LaunchScreen.storyboard */; };
 		863B0487294E18CD006EE2A6 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0486294E18CD006EE2A6 /* CalendarCell.swift */; };
 		863B0489294E1CD3006EE2A6 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0488294E1CD3006EE2A6 /* CalendarHelper.swift */; };
+		863B048B294F87BC006EE2A6 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B048A294F87BC006EE2A6 /* WeeklyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		863B0480294E1066006EE2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863B0486294E18CD006EE2A6 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		863B0488294E1CD3006EE2A6 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		863B048A294F87BC006EE2A6 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				863B0476294E1065006EE2A6 /* ViewController.swift */,
 				863B0488294E1CD3006EE2A6 /* CalendarHelper.swift */,
 				863B0478294E1065006EE2A6 /* Main.storyboard */,
+				863B048A294F87BC006EE2A6 /* WeeklyViewController.swift */,
 				863B0486294E18CD006EE2A6 /* CalendarCell.swift */,
 				863B047B294E1065006EE2A6 /* Assets.xcassets */,
 				863B047D294E1066006EE2A6 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				863B0489294E1CD3006EE2A6 /* CalendarHelper.swift in Sources */,
 				863B0477294E1065006EE2A6 /* ViewController.swift in Sources */,
 				863B0473294E1065006EE2A6 /* AppDelegate.swift in Sources */,
+				863B048B294F87BC006EE2A6 /* WeeklyViewController.swift in Sources */,
 				863B0475294E1065006EE2A6 /* SceneDelegate.swift in Sources */,
 				863B0487294E18CD006EE2A6 /* CalendarCell.swift in Sources */,
 			);
