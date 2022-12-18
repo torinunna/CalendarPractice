@@ -152,16 +152,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zAP-5Z-stF">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="WxG-ac-Nvp">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Wkt-zv-17P">
+                        <barButtonItem key="rightBarButtonItem" id="Jbe-kJ-eyu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dUz-CE-o5x">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Weekly"/>
+                                <connections>
+                                    <segue destination="qlX-JR-UkZ" kind="show" id="XrQ-pn-1pg"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="qlX-JR-UkZ" kind="show" id="zM6-wt-rHB"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -208,7 +208,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.circle.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="previousWeek:" destination="qlX-JR-UkZ" eventType="touchUpInside" id="qcI-fp-6hg"/>
+                                    <action selector="previousWeek:" destination="qlX-JR-UkZ" eventType="touchUpInside" id="1Rw-fs-OiD"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SdQ-To-Ayl">
@@ -290,15 +290,22 @@
                                                 <constraint firstItem="xTo-YR-c6K" firstAttribute="centerX" secondItem="YnC-e0-JQY" secondAttribute="centerX" id="rva-KS-qlh"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayOfMonth" destination="xTo-YR-c6K" id="pSw-Sv-yKz"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qlX-JR-UkZ" id="DZX-v4-bYF"/>
+                                    <outlet property="delegate" destination="qlX-JR-UkZ" id="0aG-BE-SeW"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOu-W4-BRR">
                                 <rect key="frame" x="266.5" y="118.5" width="147.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.circle.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="nextWeek:" destination="qlX-JR-UkZ" eventType="touchUpInside" id="Ljf-V5-MaD"/>
+                                    <action selector="nextWeek:" destination="qlX-JR-UkZ" eventType="touchUpInside" id="iSf-Jz-DyV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -328,7 +335,6 @@
                     <connections>
                         <outlet property="collectionView" destination="DgH-TM-Oda" id="xqT-lK-Qkp"/>
                         <outlet property="monthLabel" destination="eZw-9N-lr0" id="eyW-CQ-18H"/>
-                        <outlet property="previousWeek" destination="OsS-k9-eV4" id="eNT-Tw-Lr2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sit-Mh-dx7" sceneMemberID="firstResponder"/>
