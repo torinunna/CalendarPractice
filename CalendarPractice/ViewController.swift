@@ -76,7 +76,7 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarCell
-        cell.monthLabel.text = totalSquares[indexPath.item]
+        cell.dayOfMonth.text = totalSquares[indexPath.item]
         
         return cell
     }

@@ -9,6 +9,6 @@ import UIKit
 
 class CalendarCell: UICollectionViewCell {
     
-    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var dayOfMonth: UILabel!
     
 }
