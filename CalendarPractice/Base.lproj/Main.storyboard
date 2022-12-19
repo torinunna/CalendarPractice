@@ -262,7 +262,7 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-TM-Oda">
-                                <rect key="frame" x="0.0" y="230" width="414" height="632"/>
+                                <rect key="frame" x="0.0" y="230" width="414" height="90.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="CLW-sZ-sDN">
                                     <size key="itemSize" width="128" height="128"/>
@@ -308,6 +308,32 @@
                                     <action selector="nextWeek:" destination="qlX-JR-UkZ" eventType="touchUpInside" id="iSf-Jz-DyV"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-cf-g3T">
+                                <rect key="frame" x="0.0" y="320.5" width="414" height="541.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="zSD-jq-ODM">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zSD-jq-ODM" id="Zcp-6T-ATu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPH-Ne-i6g">
+                                                    <rect key="frame" x="44" y="29.5" width="43" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YPH-Ne-i6g" firstAttribute="centerY" secondItem="Zcp-6T-ATu" secondAttribute="centerY" id="kG1-w6-jvV"/>
+                                                <constraint firstItem="YPH-Ne-i6g" firstAttribute="leading" secondItem="Zcp-6T-ATu" secondAttribute="leading" constant="44" id="oh3-Vh-GLJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vSs-dy-mqP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -315,18 +341,22 @@
                             <constraint firstItem="DgH-TM-Oda" firstAttribute="leading" secondItem="vSs-dy-mqP" secondAttribute="leading" id="5v6-eF-QSR"/>
                             <constraint firstItem="MOu-W4-BRR" firstAttribute="height" secondItem="eZw-9N-lr0" secondAttribute="height" multiplier="0.96875" id="80P-XI-Oxc"/>
                             <constraint firstItem="OsS-k9-eV4" firstAttribute="leading" secondItem="vSs-dy-mqP" secondAttribute="leading" id="Af9-6F-1Mo"/>
+                            <constraint firstItem="gpo-cf-g3T" firstAttribute="top" secondItem="DgH-TM-Oda" secondAttribute="bottom" id="B6x-db-Woe"/>
+                            <constraint firstItem="vSs-dy-mqP" firstAttribute="bottom" secondItem="gpo-cf-g3T" secondAttribute="bottom" id="DvX-Jx-kLk"/>
                             <constraint firstItem="SdQ-To-Ayl" firstAttribute="top" secondItem="eZw-9N-lr0" secondAttribute="bottom" constant="30" id="FXD-Tv-j4R"/>
                             <constraint firstItem="eZw-9N-lr0" firstAttribute="top" secondItem="vSs-dy-mqP" secondAttribute="top" constant="30" id="Fj6-3I-9Mf"/>
                             <constraint firstItem="eZw-9N-lr0" firstAttribute="centerX" secondItem="vSs-dy-mqP" secondAttribute="centerX" id="Fx1-hM-sD4"/>
+                            <constraint firstItem="vSs-dy-mqP" firstAttribute="trailing" secondItem="gpo-cf-g3T" secondAttribute="trailing" id="K5Z-Pf-jZ2"/>
                             <constraint firstItem="vSs-dy-mqP" firstAttribute="trailing" secondItem="MOu-W4-BRR" secondAttribute="trailing" id="Ofg-BC-yxJ"/>
-                            <constraint firstItem="vSs-dy-mqP" firstAttribute="bottom" secondItem="DgH-TM-Oda" secondAttribute="bottom" id="RxF-5r-1JF"/>
                             <constraint firstItem="eZw-9N-lr0" firstAttribute="leading" secondItem="OsS-k9-eV4" secondAttribute="trailing" id="Tv0-hs-Pdc"/>
                             <constraint firstItem="DgH-TM-Oda" firstAttribute="top" secondItem="SdQ-To-Ayl" secondAttribute="bottom" id="Yw9-Yh-j2w"/>
                             <constraint firstItem="SdQ-To-Ayl" firstAttribute="centerX" secondItem="vSs-dy-mqP" secondAttribute="centerX" id="cBP-7R-4Xp"/>
                             <constraint firstItem="MOu-W4-BRR" firstAttribute="centerY" secondItem="eZw-9N-lr0" secondAttribute="centerY" id="ezK-5S-uE3"/>
                             <constraint firstItem="SdQ-To-Ayl" firstAttribute="leading" secondItem="vSs-dy-mqP" secondAttribute="leading" id="foe-gi-22D"/>
                             <constraint firstItem="vSs-dy-mqP" firstAttribute="trailing" secondItem="SdQ-To-Ayl" secondAttribute="trailing" id="j0u-f7-5fp"/>
+                            <constraint firstItem="gpo-cf-g3T" firstAttribute="height" secondItem="DgH-TM-Oda" secondAttribute="height" multiplier="6" id="kyk-h6-5PK"/>
                             <constraint firstItem="MOu-W4-BRR" firstAttribute="leading" secondItem="eZw-9N-lr0" secondAttribute="trailing" id="pJs-nA-ljA"/>
+                            <constraint firstItem="gpo-cf-g3T" firstAttribute="leading" secondItem="vSs-dy-mqP" secondAttribute="leading" id="prb-8t-kYN"/>
                             <constraint firstItem="vSs-dy-mqP" firstAttribute="trailing" secondItem="DgH-TM-Oda" secondAttribute="trailing" id="ved-Vn-56P"/>
                             <constraint firstItem="OsS-k9-eV4" firstAttribute="centerY" secondItem="eZw-9N-lr0" secondAttribute="centerY" id="yzx-y2-lMT"/>
                         </constraints>
@@ -339,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sit-Mh-dx7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="90"/>
+            <point key="canvasLocation" x="1050.7246376811595" y="89.732142857142847"/>
         </scene>
     </scenes>
     <resources>
