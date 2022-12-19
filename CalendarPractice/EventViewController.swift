@@ -9,4 +9,9 @@ import UIKit
 
 class EventViewController: UIViewController {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    @IBAction func save(_ sender: Any) {
+    }
 }
