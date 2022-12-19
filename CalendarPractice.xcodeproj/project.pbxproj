@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86094A682950566D00A281A0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86094A672950566D00A281A0 /* EventViewController.swift */; };
 		863B0473294E1065006EE2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0472294E1065006EE2A6 /* AppDelegate.swift */; };
 		863B0475294E1065006EE2A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0474294E1065006EE2A6 /* SceneDelegate.swift */; };
 		863B0477294E1065006EE2A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0476294E1065006EE2A6 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86094A672950566D00A281A0 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		863B046F294E1065006EE2A6 /* CalendarPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863B0472294E1065006EE2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		863B0474294E1065006EE2A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				863B0488294E1CD3006EE2A6 /* CalendarHelper.swift */,
 				863B0478294E1065006EE2A6 /* Main.storyboard */,
 				863B048A294F87BC006EE2A6 /* WeeklyViewController.swift */,
+				86094A672950566D00A281A0 /* EventViewController.swift */,
 				863B0486294E18CD006EE2A6 /* CalendarCell.swift */,
 				863B047B294E1065006EE2A6 /* Assets.xcassets */,
 				863B047D294E1066006EE2A6 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			files = (
 				863B0489294E1CD3006EE2A6 /* CalendarHelper.swift in Sources */,
 				863B0477294E1065006EE2A6 /* ViewController.swift in Sources */,
+				86094A682950566D00A281A0 /* EventViewController.swift in Sources */,
 				863B0473294E1065006EE2A6 /* AppDelegate.swift in Sources */,
 				863B048B294F87BC006EE2A6 /* WeeklyViewController.swift in Sources */,
 				863B0475294E1065006EE2A6 /* SceneDelegate.swift in Sources */,

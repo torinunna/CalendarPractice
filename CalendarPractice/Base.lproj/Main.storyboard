@@ -361,7 +361,13 @@
                             <constraint firstItem="OsS-k9-eV4" firstAttribute="centerY" secondItem="eZw-9N-lr0" secondAttribute="centerY" id="yzx-y2-lMT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Weekly" id="2iw-XT-rZa"/>
+                    <navigationItem key="navigationItem" title="Weekly" id="2iw-XT-rZa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hFp-zl-SFB">
+                            <connections>
+                                <segue destination="9Dc-dm-wyb" kind="show" id="P4T-AG-SRV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="DgH-TM-Oda" id="xqT-lK-Qkp"/>
                         <outlet property="monthLabel" destination="eZw-9N-lr0" id="eyW-CQ-18H"/>
@@ -370,6 +376,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sit-Mh-dx7" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="89.732142857142847"/>
+        </scene>
+        <!--Event-->
+        <scene sceneID="pHx-Yq-fMk">
+            <objects>
+                <viewController id="9Dc-dm-wyb" customClass="EventViewController" customModule="CalendarPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6V2-om-kjx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IPO-ZA-W26"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event" id="bu8-yT-fsB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaX-kZ-WF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="90"/>
         </scene>
     </scenes>
     <resources>
