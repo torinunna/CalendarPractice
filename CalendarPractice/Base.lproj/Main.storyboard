@@ -336,6 +336,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qlX-JR-UkZ" id="dd1-Li-PpJ"/>
+                                    <outlet property="delegate" destination="qlX-JR-UkZ" id="p1K-W9-j0H"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vSs-dy-mqP"/>
