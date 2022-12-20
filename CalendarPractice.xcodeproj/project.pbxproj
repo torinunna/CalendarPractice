@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		86094A682950566D00A281A0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86094A672950566D00A281A0 /* EventViewController.swift */; };
 		86094A6A29505FF400A281A0 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86094A6929505FF400A281A0 /* EventCell.swift */; };
+		86094A6C2951A2AE00A281A0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86094A6B2951A2AE00A281A0 /* Event.swift */; };
 		863B0473294E1065006EE2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0472294E1065006EE2A6 /* AppDelegate.swift */; };
 		863B0475294E1065006EE2A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0474294E1065006EE2A6 /* SceneDelegate.swift */; };
 		863B0477294E1065006EE2A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B0476294E1065006EE2A6 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		86094A672950566D00A281A0 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		86094A6929505FF400A281A0 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		86094A6B2951A2AE00A281A0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		863B046F294E1065006EE2A6 /* CalendarPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		863B0472294E1065006EE2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		863B0474294E1065006EE2A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				863B048A294F87BC006EE2A6 /* WeeklyViewController.swift */,
 				86094A672950566D00A281A0 /* EventViewController.swift */,
 				86094A6929505FF400A281A0 /* EventCell.swift */,
+				86094A6B2951A2AE00A281A0 /* Event.swift */,
 				863B0486294E18CD006EE2A6 /* CalendarCell.swift */,
 				863B047B294E1065006EE2A6 /* Assets.xcassets */,
 				863B047D294E1066006EE2A6 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				863B0489294E1CD3006EE2A6 /* CalendarHelper.swift in Sources */,
+				86094A6C2951A2AE00A281A0 /* Event.swift in Sources */,
 				863B0477294E1065006EE2A6 /* ViewController.swift in Sources */,
 				86094A682950566D00A281A0 /* EventViewController.swift in Sources */,
 				863B0473294E1065006EE2A6 /* AppDelegate.swift in Sources */,

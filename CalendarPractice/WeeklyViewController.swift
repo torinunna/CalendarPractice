@@ -7,12 +7,13 @@
 
 import UIKit
 
+var selectedDate = Date()
+
 class WeeklyViewController: UIViewController {
     
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var selectedDate = Date()
     var totalSquares = [Date]()
     
     override func viewDidLoad() {
