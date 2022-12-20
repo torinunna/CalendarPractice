@@ -392,13 +392,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKH-IO-CJY">
-                                <rect key="frame" x="62" y="118" width="290" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKH-IO-CJY">
+                                <rect key="frame" x="20.5" y="118" width="373" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="A6v-wg-pGX">
-                                <rect key="frame" x="62" y="172" width="290" height="162"/>
+                                <rect key="frame" x="20.5" y="172" width="373" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="THP-pD-FqT"/>
                                 </constraints>
@@ -409,7 +409,7 @@
                         <constraints>
                             <constraint firstItem="A6v-wg-pGX" firstAttribute="centerX" secondItem="JKH-IO-CJY" secondAttribute="centerX" id="1PO-Lg-GaS"/>
                             <constraint firstItem="JKH-IO-CJY" firstAttribute="centerX" secondItem="IPO-ZA-W26" secondAttribute="centerX" id="A3B-9e-cat"/>
-                            <constraint firstItem="JKH-IO-CJY" firstAttribute="width" secondItem="6V2-om-kjx" secondAttribute="width" multiplier="0.7" id="L4I-rO-lZe"/>
+                            <constraint firstItem="JKH-IO-CJY" firstAttribute="width" secondItem="6V2-om-kjx" secondAttribute="width" multiplier="0.9" id="L4I-rO-lZe"/>
                             <constraint firstItem="A6v-wg-pGX" firstAttribute="top" secondItem="JKH-IO-CJY" secondAttribute="bottom" constant="20" id="atP-Lc-Lp7"/>
                             <constraint firstItem="A6v-wg-pGX" firstAttribute="width" secondItem="JKH-IO-CJY" secondAttribute="width" id="caS-eU-Ywd"/>
                             <constraint firstItem="JKH-IO-CJY" firstAttribute="top" secondItem="IPO-ZA-W26" secondAttribute="top" constant="30" id="kaG-uo-eqd"/>
