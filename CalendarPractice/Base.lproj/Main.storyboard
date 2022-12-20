@@ -378,6 +378,7 @@
                     <connections>
                         <outlet property="collectionView" destination="DgH-TM-Oda" id="xqT-lK-Qkp"/>
                         <outlet property="monthLabel" destination="eZw-9N-lr0" id="eyW-CQ-18H"/>
+                        <outlet property="tableView" destination="gpo-cf-g3T" id="mLz-hR-ABi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sit-Mh-dx7" sceneMemberID="firstResponder"/>

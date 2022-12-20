@@ -13,13 +13,14 @@ class WeeklyViewController: UIViewController {
     
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     var totalSquares = [Date]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setCellsView()
-        setMonthView()
+        setWeekView()
     }
     
     func setCellsView() {
@@ -30,7 +31,7 @@ class WeeklyViewController: UIViewController {
         flowLayout.itemSize = CGSize(width: width, height: height)
     }
     
-    func setMonthView() {
+    func setWeekView() {
         totalSquares.removeAll()
         
         var current = CalendarHelper().sundayForDate(date: selectedDate)
@@ -43,20 +44,26 @@ class WeeklyViewController: UIViewController {
        
         monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
+        tableView.reloadData()
     }
 
     @IBAction func previousWeek(_ sender: Any) {
         selectedDate = CalendarHelper().addDays(date: selectedDate, days: -7)
-        setMonthView()
+        setWeekView()
     }
     
     @IBAction func nextWeek(_ sender: Any) {
         selectedDate = CalendarHelper().addDays(date: selectedDate, days: 7)
-        setMonthView()
+        setWeekView()
     }
     
     override open var shouldAutorotate: Bool {
         return false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
     }
 }
 
@@ -84,6 +91,7 @@ extension WeeklyViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedDate = totalSquares[indexPath.item]
         collectionView.reloadData()
+        tableView.reloadData()
     }
 }
 
