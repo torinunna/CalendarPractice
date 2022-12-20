@@ -103,7 +103,7 @@ extension WeeklyViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
         let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
-        cell.eventLabel.text = event.name
+        cell.eventLabel.text = event.name + " " + CalendarHelper().timeString(date: event.date)
         return cell
     }
     

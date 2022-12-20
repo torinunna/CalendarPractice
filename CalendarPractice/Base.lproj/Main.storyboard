@@ -417,13 +417,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Event" id="bu8-yT-fsB">
-                        <barButtonItem key="rightBarButtonItem" id="AIC-TI-LJx">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WML-zF-Sjl">
-                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AIC-TI-LJx">
                             <connections>
                                 <action selector="save:" destination="9Dc-dm-wyb" id="j9c-FX-xxf"/>
                             </connections>
