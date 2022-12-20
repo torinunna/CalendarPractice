@@ -87,4 +87,22 @@ extension WeeklyViewController: UICollectionViewDelegate {
     }
 }
 
+extension WeeklyViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Event().eventsForDate(date: selectedDate).count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventCell
+        let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
+        cell.eventLabel.text = event.name
+        return cell
+    }
+    
+    
+}
+
+extension WeeklyViewController: UITableViewDelegate {
+    
+}
 

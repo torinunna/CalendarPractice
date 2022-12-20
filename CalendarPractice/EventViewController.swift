@@ -24,5 +24,8 @@ class EventViewController: UIViewController {
         newEvent.id = eventsList.count
         newEvent.name = nameTextField.text
         newEvent.date = datePicker.date
+        
+        eventsList.append(newEvent)
+        navigationController?.popViewController(animated: true)
     }
 }
