@@ -25,7 +25,7 @@ class WeeklyViewController: UIViewController {
     
     func setCellsView() {
         let width = (collectionView.frame.size.width - 2) / 8
-        let height = (collectionView.frame.size.height - 2) / 8
+        let height: CGFloat = 50.0
         
         let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.itemSize = CGSize(width: width, height: height)
