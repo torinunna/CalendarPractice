@@ -9,5 +9,12 @@ import UIKit
 
 class DailyViewController: UIViewController {
  
-
+    @IBOutlet weak var dayLabel: UILabel!
+    
+    @IBAction func previousDay(_ sender: Any) {
+    }
+    
+    @IBAction func nextDay(_ sender: Any) {
+    }
+        
 }

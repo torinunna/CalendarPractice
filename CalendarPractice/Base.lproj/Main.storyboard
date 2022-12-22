@@ -458,7 +458,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.circle.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="previousMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GOG-hm-EB0"/>
+                                    <action selector="previousDay:" destination="VS0-Vd-2zV" eventType="touchUpInside" id="lx1-oZ-eGO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erq-Si-9tJ">
@@ -466,7 +466,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.circle.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="nextMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SlC-SB-6m5"/>
+                                    <action selector="nextDay:" destination="VS0-Vd-2zV" eventType="touchUpInside" id="9ym-qU-Wep"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9f-CG-ING">
@@ -572,6 +572,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Daily" id="mv1-kK-dJ9"/>
+                    <connections>
+                        <outlet property="dayLabel" destination="sPe-LL-R2Y" id="F0L-gB-6cb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUD-4n-ZhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
