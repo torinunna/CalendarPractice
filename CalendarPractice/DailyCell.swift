@@ -9,4 +9,10 @@ import UIKit
 
 class DailyCell: UITableViewCell {
     
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var event1Label: UILabel!
+    @IBOutlet weak var event2Label: UILabel!
+    @IBOutlet weak var event3Label: UILabel!
+    
 }

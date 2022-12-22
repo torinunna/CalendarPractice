@@ -547,6 +547,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="2Yu-pe-tls" secondAttribute="bottom" id="pne-uQ-YvZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="event1Label" destination="o4f-fJ-Imt" id="R8o-p5-6DP"/>
+                                            <outlet property="event2Label" destination="Rcx-0g-FyC" id="UwP-TD-eWT"/>
+                                            <outlet property="event3Label" destination="Xip-MK-Drh" id="BgF-ky-E79"/>
+                                            <outlet property="timeLabel" destination="hy0-EZ-FH2" id="xin-a3-fTQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
