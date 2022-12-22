@@ -10,6 +10,8 @@ import UIKit
 class DailyViewController: UIViewController {
  
     @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var dayOfWeekLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     @IBAction func previousDay(_ sender: Any) {
     }

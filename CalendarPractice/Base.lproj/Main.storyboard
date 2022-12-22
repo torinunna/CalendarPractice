@@ -574,6 +574,8 @@
                     <navigationItem key="navigationItem" title="Daily" id="mv1-kK-dJ9"/>
                     <connections>
                         <outlet property="dayLabel" destination="sPe-LL-R2Y" id="F0L-gB-6cb"/>
+                        <outlet property="dayOfWeekLabel" destination="Z9f-CG-ING" id="9xq-tE-Ei7"/>
+                        <outlet property="tableView" destination="kn1-mh-eK0" id="IWP-jX-BYJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUD-4n-ZhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
