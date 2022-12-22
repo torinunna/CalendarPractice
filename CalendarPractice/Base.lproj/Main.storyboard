@@ -437,7 +437,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaX-kZ-WF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852" y="-199"/>
+            <point key="canvasLocation" x="2712" y="551"/>
         </scene>
         <!--Daily-->
         <scene sceneID="oR6-EI-d1V">
@@ -577,7 +577,13 @@
                             <constraint firstItem="Erq-Si-9tJ" firstAttribute="centerY" secondItem="sPe-LL-R2Y" secondAttribute="centerY" id="x3Y-ME-UbZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Daily" id="mv1-kK-dJ9"/>
+                    <navigationItem key="navigationItem" title="Daily" id="mv1-kK-dJ9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dIW-TH-goy">
+                            <connections>
+                                <segue destination="9Dc-dm-wyb" kind="show" id="g1A-xq-yzc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dayLabel" destination="sPe-LL-R2Y" id="F0L-gB-6cb"/>
                         <outlet property="dayOfWeekLabel" destination="Z9f-CG-ING" id="9xq-tE-Ei7"/>
@@ -586,9 +592,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUD-4n-ZhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1850.7246376811595" y="477.45535714285711"/>
+            <point key="canvasLocation" x="2091" y="-209"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g1A-xq-yzc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
