@@ -22,9 +22,13 @@ class DailyViewController: UIViewController {
     }
     
     @IBAction func previousDay(_ sender: Any) {
+        selectedDate = CalendarHelper().addDays(date: selectedDate, days: -1)
+        setDayView()
     }
     
     @IBAction func nextDay(_ sender: Any) {
+        selectedDate = CalendarHelper().addDays(date: selectedDate, days: 1)
+        setDayView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
