@@ -20,24 +20,24 @@ class CalendarHelper {
     
     func monthString(date: Date) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "LLLL"
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        dateFormatter.dateFormat = "yyyy년 MM월"
         return dateFormatter.string(from: date)
     }
     
     func monthDayString(date: Date) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "LLLL dd"
-        return dateFormatter.string(from: date)
-    }
-    
-    func yearString(date: Date) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy"
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        dateFormatter.dateFormat = "MM월 dd일"
         return dateFormatter.string(from: date)
     }
     
     func timeString(date: Date) -> String {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
         dateFormatter.dateFormat = "HH:mm"
         return dateFormatter.string(from: date)
     }

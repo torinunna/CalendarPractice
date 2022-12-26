@@ -42,7 +42,7 @@ class WeeklyViewController: UIViewController {
             current = CalendarHelper().addDays(date: current, days: 1)
         }
        
-        monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
+        monthLabel.text = CalendarHelper().monthString(date: selectedDate)
         collectionView.reloadData()
         tableView.reloadData()
     }

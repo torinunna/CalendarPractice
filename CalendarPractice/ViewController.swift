@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             totalSquares.append(calendarDay)
             count += 1
         }
-        monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
+        monthLabel.text = CalendarHelper().monthString(date: selectedDate)
         collectionView.reloadData()
     }
 
