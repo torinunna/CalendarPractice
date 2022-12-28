@@ -11,11 +11,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var addButton: UIButton!
     
     var totalSquares = [CalendarDay]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addButton.layer.cornerRadius = 40
+        addButton.clipsToBounds = true
         setCellsView()
         setMonthView()
     }
@@ -60,7 +63,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func previousMonth(_ sender: Any) {
-        
         selectedDate = CalendarHelper().minusMonth(date: selectedDate)
         setMonthView()
     }

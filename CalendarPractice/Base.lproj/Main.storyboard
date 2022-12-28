@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -128,6 +129,21 @@
                                     <action selector="nextMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWo-BJ-Dfg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-7c-QYD">
+                                <rect key="frame" x="167" y="767" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9Xf-MB-zBc"/>
+                                    <constraint firstAttribute="height" constant="80" id="apO-fy-A3B"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBP-E8-LhD"/>
+                                    <segue destination="9Dc-dm-wyb" kind="show" id="ZgA-BL-Oeo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -139,6 +155,7 @@
                             <constraint firstItem="usW-AO-IN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kug-ye-0a1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="usW-AO-IN5" secondAttribute="trailing" id="MbJ-Bh-nkJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GFj-fP-kv5" secondAttribute="trailing" id="OPY-5t-f6z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tcx-7c-QYD" secondAttribute="bottom" constant="15" id="SoK-ot-mWD"/>
                             <constraint firstItem="iEn-FS-IZy" firstAttribute="centerY" secondItem="4BB-dS-3kK" secondAttribute="centerY" id="TWL-a5-05o"/>
                             <constraint firstItem="4BB-dS-3kK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uqf-ar-HAL"/>
                             <constraint firstItem="iEn-FS-IZy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="beB-og-ua2"/>
@@ -146,6 +163,7 @@
                             <constraint firstItem="usW-AO-IN5" firstAttribute="top" secondItem="GFj-fP-kv5" secondAttribute="bottom" id="g8d-vc-07H"/>
                             <constraint firstItem="kw8-68-e8c" firstAttribute="leading" secondItem="4BB-dS-3kK" secondAttribute="trailing" id="jK9-fE-mug"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kw8-68-e8c" secondAttribute="trailing" id="kOb-uK-T97"/>
+                            <constraint firstItem="Tcx-7c-QYD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mMo-bm-fuT"/>
                             <constraint firstItem="GFj-fP-kv5" firstAttribute="top" secondItem="4BB-dS-3kK" secondAttribute="bottom" constant="30" id="pzL-Zk-cAg"/>
                             <constraint firstItem="4BB-dS-3kK" firstAttribute="leading" secondItem="iEn-FS-IZy" secondAttribute="trailing" id="vE7-fS-SC1"/>
                             <constraint firstItem="kw8-68-e8c" firstAttribute="centerY" secondItem="4BB-dS-3kK" secondAttribute="centerY" id="y3k-aA-nC3"/>
@@ -165,13 +183,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="Tcx-7c-QYD" id="lP8-GK-r9n"/>
                         <outlet property="collectionView" destination="usW-AO-IN5" id="kyP-av-Z4a"/>
                         <outlet property="monthLabel" destination="4BB-dS-3kK" id="kcS-2i-NTv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236" y="90"/>
+            <point key="canvasLocation" x="113" y="267"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mb2-35-nx3">
@@ -187,7 +206,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABU-RN-mNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="90"/>
+            <point key="canvasLocation" x="-761" y="267"/>
         </scene>
         <!--Weekly-->
         <scene sceneID="Ifc-jN-aUO">
@@ -390,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sit-Mh-dx7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="89.732142857142847"/>
+            <point key="canvasLocation" x="983" y="267"/>
         </scene>
         <!--Event-->
         <scene sceneID="pHx-Yq-fMk">
@@ -437,7 +456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaX-kZ-WF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2712" y="551"/>
+            <point key="canvasLocation" x="983" y="-563"/>
         </scene>
         <!--Daily-->
         <scene sceneID="oR6-EI-d1V">
@@ -596,15 +615,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUD-4n-ZhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2091" y="-209"/>
+            <point key="canvasLocation" x="1843" y="267"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="P4T-AG-SRV"/>
+        <segue reference="ZgA-BL-Oeo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
